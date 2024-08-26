@@ -27,9 +27,16 @@ public class Employee {
     @Column(name = "emp_sal")
     private double empSal;
 
+    @Column(name="Emp_Sex")
+    private String sex;
 
+    public String getSex() {
+        return sex;
+    }
 
-
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
 
     public int getEmpId() {
         return empId;

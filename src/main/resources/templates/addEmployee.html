@@ -20,21 +20,31 @@
             <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Employee Name"
                    th:field="*{empName}">
         </div>
-
-        <div align="center" class="col-3">
-            <label>ENTER EMPLOYEE DESIGNATION</label>
-            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Employee DESIGNATION"
-                   th:field="*{empDesi}">
-        </div>
-        <div align="center" class="col-3">
-            <label>ENTER EMPLOYEE SALARY</label>
-            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Employee SALARY"
-                   th:field="*{empSal}">
-        </div>
-        <div align="center">
-            <button><input type="submit" value="ADD EMPLOYEE"></button>
-        </div>
     </div>
+
+        <div align="center">
+            <div align="center" class="col-3">
+                <label>ENTER EMPLOYEE SEX</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Employee Sex"
+                       th:field="*{sex}">
+            </div>
+
+
+            <div align="center" class="col-3">
+                <label>ENTER EMPLOYEE DESIGNATION</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Employee DESIGNATION"
+                       th:field="*{empDesi}">
+            </div>
+            <div align="center" class="col-3">
+                <label>ENTER EMPLOYEE SALARY</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Employee SALARY"
+                       th:field="*{empSal}">
+            </div>
+            <div align="center">
+                <button><input type="submit" value="ADD EMPLOYEE"></button>
+            </div>
+        </div>
 </form>
+
 </body>
 </html>
