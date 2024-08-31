@@ -27,16 +27,30 @@ public class Employee {
     @Column(name = "emp_sal")
     private double empSal;
 
-    @Column(name="Emp_Sex")
-    private String sex;
+    @Column(name="Emp_gender")
+    private String gender;
 
-    public String getSex() {
-        return sex;
+    public String getGender() {
+        return gender;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
+
+    @Column(nullable = true,length = 64)
+    private String photos;
+
+
+    public String getPhotos() {
+        return photos;
+    }
+
+    public void setPhotos(String photos) {
+        this.photos = photos;
+    }
+
+
 
     public int getEmpId() {
         return empId;
